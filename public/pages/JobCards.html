@@ -10,43 +10,122 @@
     <link rel="stylesheet" href="../styles/style.css">
     <title>JobCard Components TEMP PAGE!</title>
 </head>
-<body>
+<body class="px-10 py-10">
 
-    <div class="w-[404px] h-auto job-card border-[1px] border-[#6F6C6C]/[0.13] rounded-lg shadow-md hover:shadow-lg hover:translate-y-[-4px] transition-all duration-300 relative p-4">
-        <!-- Top Left Button -->
-        <button class="absolute top-4 left-4 bg-[#57DD70] text-white font-bold text-sm py-1 px-4 rounded-full">
-            Remote
-        </button>
-        
-        <!-- Top Right Pay Info -->
-        <span class="absolute top-4 right-4 text-[#398A48] font-medium text-lg">
-            $12/hr
-        </span>
-    
-        <!-- Icon and Company Name -->
-        <div class="flex flex-col items-center mt-10">
-            <img src="../assets/remote-employer.png" alt="Icon" class="w-16 h-16 mb-2">
-            <span class="text-[#716D6D] text-[20px]">Venmo Studios</span>
-        </div>
-    
-        <!-- Job Title -->
-        <h2 class="text-black text-[40px]  text-center mt-2">
-            Graphics Designer
-        </h2>
-    
-        <!-- Job Description -->
-        <p class="text-[14px] text-center mt-2">
-            We are looking for a creative graphics designer to work on our project for 3 days. He/she will be...
-        </p>
-    
-        <!-- Divider and View Job -->
-        <div class="flex flex-col items-center mt-4">
-            <div class="w-[160px] h-[1px] bg-[#57DD70]"></div>
-            <button class="mt-2 text-[18px] font-medium text-black">
-                VIEW JOB
+    <!-- Parent Container for Cards -->
+    <div class="flex flex-wrap gap-6 justify-center">
+        <!-- Job Card -->
+        <div class="w-[404px] h-auto job-card-remote border-[1px] border-[#6F6C6C]/[0.13] rounded-lg shadow-md hover:shadow-lg hover:translate-y-[-4px] transition-all duration-300 relative p-4">
+            <!-- Top Left Button -->
+            <button class="absolute top-4 left-4 bg-[#57DD70] text-white font-bold text-sm py-1 px-4 rounded-full">
+                Remote
             </button>
+            
+            <!-- Top Right Pay Info -->
+            <span class="absolute top-4 right-4 text-[#398A48] font-medium text-lg">
+                $10/hr
+            </span>
+        
+            <!-- Icon and Company Name -->
+            <div class="flex items-center justify-center mt-10">
+                <img src="../assets/remote-employer.png" alt="Icon" class="w-7 h-7 mr-2">
+                <span class="text-[#716D6D] text-[20px]">Venmo Studios</span>
+            </div>
+        
+            <!-- Job Title -->
+            <h2 class="text-black text-[40px] text-center mt-2">
+                Graphics Designer
+            </h2>
+        
+            <!-- Job Description -->
+            <p class="text-[14px] text-center mt-2">
+                We are looking for a creative graphics designer to work on our project for 3 days. He/she will be...
+            </p>
+        
+            <!-- Divider and View Job -->
+            <div class="flex flex-col items-center mt-4">
+                <div class="w-[160px] h-[1px] bg-[#57DD70]"></div>
+                <button class="mt-2 text-[18px] font-medium text-black">
+                    VIEW JOB
+                </button>
+            </div>
+        </div>
+        
+        <div class="w-[404px] h-auto job-card-onsite border-[1px] border-[#6F6C6C]/[0.13] rounded-lg shadow-md hover:shadow-lg hover:translate-y-[-4px] transition-all duration-300 relative p-4">
+            <!-- Top Left Button -->
+            <button class="absolute top-4 left-4 bg-[#F0823E] text-white font-bold text-sm py-1 px-4 rounded-full">
+                Onsite
+            </button>
+            
+            <!-- Top Right Pay Info -->
+            <span class="absolute top-4 right-4 text-[#D66016] font-medium text-lg">
+                $12/hr
+            </span>
+        
+            <!-- Icon and Company Name -->
+            <div class="flex items-center justify-center mt-10">
+                <img src="../assets/onsite-employer.png" alt="Icon" class="w-7 h-7 mr-2">
+                <span class="text-[#716D6D] text-[20px]">Venmo Studios</span>
+            </div>
+        
+            <!-- Job Title -->
+            <h2 class="text-black text-[40px] text-center mt-2">
+                UX/UI Designer
+            </h2>
+        
+            <!-- Job Description -->
+            <p class="text-[14px] text-center mt-2">
+                We are seeking a talented UX/UI designer to collaborate on a short-term project for 3 days. 
+            </p>
+        
+            <!-- Divider and View Job -->
+            <div class="flex flex-col items-center mt-4">
+                <div class="w-[160px] h-[1px] bg-[#F0823E]"></div>
+                <button class="mt-2 text-[18px] font-medium text-black">
+                    VIEW JOB
+                </button>
+            </div>
+        </div>
+
+        <div class="w-[404px] h-auto job-card-hybrid border-[1px] border-[#6F6C6C]/[0.13] rounded-lg shadow-md hover:shadow-lg hover:translate-y-[-4px] transition-all duration-300 relative p-4">
+            <!-- Top Left Button -->
+            <button class="absolute top-4 left-4 bg-[#6936B7] text-white font-bold text-sm py-1 px-4 rounded-full">
+             Hybrid
+            </button>
+            
+            <!-- Top Right Pay Info -->
+            <span class="absolute top-4 right-4 text-[#45227A] font-medium text-lg">
+                $12/hr
+            </span>
+        
+            <!-- Icon and Company Name -->
+            <div class="flex items-center justify-center mt-10">
+                <img src="../assets/hybrid-employer.png" alt="Icon" class="w-7 h-7 mr-2">
+                <span class="text-[#716D6D] text-[20px]">Venmo Studios</span>
+            </div>
+        
+            <!-- Job Title -->
+            <h2 class="text-black text-[40px] text-center mt-2">
+                Live Translator
+            </h2>
+        
+            <!-- Job Description -->
+            <p class="text-[14px] text-center mt-2">
+                We are seeking a skilled Focus Group Discussion (FGD) moderator to lead engaging and insig...
+            </p>
+        
+            <!-- Divider and View Job -->
+            <div class="flex flex-col items-center mt-4">
+                <div class="w-[160px] h-[1px] bg-[#6936B7]"></div>
+                <button class="mt-2 text-[18px] font-medium text-black">
+                    VIEW JOB
+                </button>
+            </div>
         </div>
     </div>
-    
+    </div>
+
+   
+
 </body>
 </html>

@@ -591,6 +591,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -623,8 +627,8 @@ video {
   display: none;
 }
 
-.h-16 {
-  height: 4rem;
+.h-7 {
+  height: 1.75rem;
 }
 
 .h-\[1px\] {
@@ -655,8 +659,8 @@ video {
   width: 33.333333%;
 }
 
-.w-16 {
-  width: 4rem;
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-\[160px\] {
@@ -693,6 +697,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -818,6 +826,11 @@ video {
   background-color: rgb(102 153 167 / 22%);
 }
 
+.bg-\[\#6936B7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(105 54 183 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#F0823E\] {
   --tw-bg-opacity: 1;
   background-color: rgb(240 130 62 / var(--tw-bg-opacity, 1));
@@ -852,6 +865,11 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-2 {
@@ -899,6 +917,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -907,6 +930,11 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-3 {
@@ -981,10 +1009,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-\[35px\] {
-  font-size: 35px;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1008,6 +1032,11 @@ video {
 .text-\[\#398A48\] {
   --tw-text-opacity: 1;
   color: rgb(57 138 72 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#45227A\] {
+  --tw-text-opacity: 1;
+  color: rgb(69 34 122 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#6699A7\] {
@@ -1038,6 +1067,11 @@ video {
 .text-\[\#9C9C9C\] {
   --tw-text-opacity: 1;
   color: rgb(156 156 156 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#D66016\] {
+  --tw-text-opacity: 1;
+  color: rgb(214 96 22 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#F0823E\] {
@@ -1124,8 +1158,16 @@ Body{
   opacity: 0.8;
 }
 
-.job-card{
+.job-card-remote{
   background-color: #97f28d34;
+}
+
+.job-card-onsite{
+  background-color: #f0823e1f;
+}
+
+.job-card-hybrid{
+  background-color: #6a36b727;
 }
 
 .hover\:translate-y-\[-4px\]:hover {
@@ -1261,3 +1303,4 @@ Body{
     transition-property: none;
   }
 }
+

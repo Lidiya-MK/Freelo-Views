@@ -40,7 +40,18 @@ Body{
     opacity: 0.8; 
 }
 
-.job-card{
+.job-card-remote{
     background-color: #97f28d34;
 
 }
+
+.job-card-onsite{
+    background-color: #f0823e1f;
+
+}
+
+.job-card-hybrid{
+    background-color: #6a36b727;
+
+}
+
