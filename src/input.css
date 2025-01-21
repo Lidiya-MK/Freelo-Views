@@ -39,3 +39,8 @@ Body{
 .gradient-border-btn:hover {
     opacity: 0.8; 
 }
+
+.job-card{
+    background-color: #97f28d34;
+
+}
