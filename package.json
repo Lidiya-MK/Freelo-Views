@@ -4,7 +4,7 @@
   "description": "Views for freelo",
   "main": "index.js",
   "scripts": {
-    "b": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+    "b": "npx tailwindcss -i ./src/input.css -o ./public/styles/style.css --watch"
   },
   "keywords": [],
   "author": "",
