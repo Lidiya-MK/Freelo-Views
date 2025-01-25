@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Posting Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff4e6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      background: #ff8c42;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    .form-container h2 {
+      margin-top: 0;
+      color: #fff;
+    }
+    .form-container label {
+      font-weight: bold;
+      color: #fff;
+    }
+    .form-container select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 4px;
+    }
+    .selected-skills {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .skill-item {
+      background: #fff;
+      color: #ff8c42;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 4px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
+    .skill-item button {
+      background: none;
+      border: none;
+      color: #ff8c42;
+      font-size: 14px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    .skill-item button:hover {
+      color: #cc6c33;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Post a Job</h2>
+    <label for="skills">Select Required Skills:</label>
+    <select id="skills">
+      <option value="">-- Choose a skill --</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="React">React</option>
+      <option value="Node.js">Node.js</option>
+      <option value="CSS">CSS</option>
+      <option value="HTML">HTML</option>
+    </select>
+
+    <div class="selected-skills" id="selected-skills">
+      <!-- Selected skills will appear here -->
+    </div>
+  </div>
+
+  <script>
+    const skillsSelect = document.getElementById('skills');
+    const selectedSkillsContainer = document.getElementById('selected-skills');
+
+    skillsSelect.addEventListener('change', () => {
+      const selectedValue = skillsSelect.value;
+
+      if (selectedValue && !document.getElementById(selectedValue)) {
+        const skillItem = document.createElement('div');
+        skillItem.className = 'skill-item';
+        skillItem.id = selectedValue;
+        skillItem.innerHTML = `${selectedValue} <button onclick="removeSkill('${selectedValue}')">&times;</button>`;
+        selectedSkillsContainer.appendChild(skillItem);
+
+        skillsSelect.value = '';
+      }
+    });
+
+    function removeSkill(skill) {
+      const skillItem = document.getElementById(skill);
+      if (skillItem) {
+        selectedSkillsContainer.removeChild(skillItem);
+      }
+    }
+  </script>
+</body>
+</html>
