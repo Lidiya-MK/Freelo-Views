@@ -806,8 +806,20 @@ video {
   height: 100%;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
 .max-h-40 {
   max-height: 10rem;
+}
+
+.max-h-32 {
+  max-height: 8rem;
 }
 
 .min-h-screen {
@@ -880,6 +892,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .max-w-\[360px\] {
@@ -968,6 +992,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1148,6 +1176,15 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#6692A7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 146 167 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[57DD70\] {
+  background-color: 57DD70;
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1171,6 +1208,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-10 {
@@ -1354,6 +1395,14 @@ video {
   line-height: 1rem;
 }
 
+.text-\[25px\] {
+  font-size: 25px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1476,6 +1525,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[6692A7\] {
+  color: 6692A7;
 }
 
 .placeholder-\[\#9C9C9C\]::-moz-placeholder {
@@ -1630,6 +1683,24 @@ Body{
   background-color: rgb(76 175 80 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#57DD70\]\/90:hover {
+  background-color: rgb(87 221 112 / 0.9);
+}
+
+.hover\:bg-\[\#\#6692A7\]:hover {
+  background-color: ##6692A7;
+}
+
+.hover\:bg-\[\#6692A7\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 146 167 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-\[\#6EB0B6\]:hover {
   --tw-text-opacity: 1;
   color: rgb(110 176 182 / var(--tw-text-opacity, 1));
@@ -1696,6 +1767,10 @@ Body{
 
   .md\:w-\[320px\] {
     width: 320px;
+  }
+
+  .md\:w-\[280px\] {
+    width: 280px;
   }
 
   .md\:text-left {
