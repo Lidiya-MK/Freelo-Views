@@ -1119,6 +1119,11 @@ video {
   border-color: rgb(0 0 0 / 0.36);
 }
 
+.border-\[\#57DD70\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(87 221 112 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[\#000000\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
@@ -1268,6 +1273,11 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-3 {
@@ -1653,6 +1663,11 @@ Body{
   background-color: rgb(240 68 62 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-\[\#57DD70\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 221 112 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-\[\#6EB0B6\]:hover {
   --tw-text-opacity: 1;
   color: rgb(110 176 182 / var(--tw-text-opacity, 1));
@@ -1801,6 +1816,10 @@ Body{
 
   .lg\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .lg\:w-\[87\%\] {
+    width: 87%;
   }
 
   .lg\:flex-1 {
