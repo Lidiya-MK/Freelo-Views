@@ -409,58 +409,7 @@
 
 
 
-        <script>
-            // Function to open the modal
-            function openModal() {
-              document.getElementById('modal').classList.remove('hidden');
-            }
-          
-            // Function to close the modal
-            function closeModal() {
-              document.getElementById('modal').classList.add('hidden');
-            }
-            const skillsDropdown = document.getElementById('skillsDropdown');
-  const skillsList = document.getElementById('skillsList');
-  const selectedSkillsContainer = document.getElementById('selectedSkillsContainer');
-
-  skillsDropdown.addEventListener('click', () => {
-    skillsList.classList.toggle('hidden');
-  });
-
-  const skillItems = skillsList.querySelectorAll('.skill-item');
-  
-  skillItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const skill = item.textContent;
-
-  
-      if (!isSkillSelected(skill)) {
      
-        const skillItem = document.createElement('div');
-        skillItem.className = 'bg-[#F0823E] text-white rounded-lg px-3 py-1 text-sm flex items-center';
-        skillItem.innerHTML = `${skill} <button onclick="removeSkill('${skill}')" class="ml-2 text-white">&times;</button>`;
-        selectedSkillsContainer.appendChild(skillItem);
-
-    
-        skillsList.classList.add('hidden');
-      }
-    });
-  });
-
-
-  function isSkillSelected(skill) {
-    const selectedSkills = selectedSkillsContainer.querySelectorAll('div');
-    return Array.from(selectedSkills).some(item => item.textContent.includes(skill));
-  }
-
-  function removeSkill(skill) {
-
-    const skillItem = Array.from(selectedSkillsContainer.children).find(item => item.textContent.includes(skill));
-    if (skillItem) {
-      selectedSkillsContainer.removeChild(skillItem);
-    }
-  }
-  </script>
-
+       
 </body>
 </html>
